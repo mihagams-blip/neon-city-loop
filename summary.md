@@ -19,23 +19,7 @@ the billboards). Published to GitHub and deployed on Vercel.
   Signage / Near). The labels encode the real compositing order of the artwork,
   rather than being decorative numbering.
 
-## Hero sizing (final)
-The source frame is 1280x720 and **has no sky** — a pixel probe of the top row
-shows the megastructures already at luminance 66-92 across the middle, i.e.
-the towers run off the top edge of the original. No amount of layout work can
-reveal a horizon that was never rendered.
-
-What was fixable was the magnification: the frame was being stretched to fill
-a 1710px window (1.34x upscale), which turned the city into a wall pressed
-against the viewport. The plate is now capped at the source's own 1280x720 and
-centred, so on a 15-inch laptop it sits at exactly 1.00x with ~215px of
-blurred spill either side and the spec strip visible below. The artwork reads
-as a picture in a dark room rather than a magnified backdrop.
-
-If real sky is wanted, it has to come from the source: re-render the frame
-with headroom above the skyline.
-
-## Hero sizing (earlier revision)
+## Hero sizing (revised)
 The first version filled the viewport with `object-fit: cover`, which cropped
 roughly 11% off each side on a 15-inch laptop (a 1.6-ratio window against a
 1.78 image) — exactly the edges that carry the scale of the skyline. Now the
