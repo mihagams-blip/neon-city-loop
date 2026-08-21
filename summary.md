@@ -19,6 +19,18 @@ the billboards). Published to GitHub and deployed on Vercel.
   Signage / Near). The labels encode the real compositing order of the artwork,
   rather than being decorative numbering.
 
+## Hero sizing (revised)
+The first version filled the viewport with `object-fit: cover`, which cropped
+roughly 11% off each side on a 15-inch laptop (a 1.6-ratio window against a
+1.78 image) — exactly the edges that carry the scale of the skyline. Now the
+frame is sized by the artwork instead: full width at its own 16:9, capped at
+viewport height. On a 1440×900 window that is 1440×810 — the complete frame,
+no crop, no bars, with the spec strip peeking below as a scroll cue. On windows
+*wider* than 16:9 the leftover strip is filled with a blurred, dimmed
+enlargement of the same frame, so it reads as spill from the city rather than a
+letterbox border. The vignette and title were also scaled back so they stop
+covering the left quarter of the art.
+
 ## Performance
 The loop is 10.6 MB. A 179 KB first-frame poster paints immediately and the
 loop cross-fades in on `load`; `assets/*` is served with a one-year immutable
