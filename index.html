@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neon City Loop</title>
+<meta name="description" content="An animated cyberpunk cityscape: sweeping searchlights, flickering windows, and billboards that never sleep. 1280×720 continuous loop.">
+<meta property="og:title" content="Neon City Loop">
+<meta property="og:description" content="Sweeping searchlights, flickering windows, and billboards that never sleep.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230A0710'/><rect x='5' y='12' width='5' height='16' fill='%23E8873A'/><rect x='13' y='6' width='6' height='22' fill='%23D96BA8'/><rect x='22' y='15' width='5' height='13' fill='%239DBEF2'/></svg>">
+<link rel="preload" as="image" href="assets/poster.jpg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+  <section class="stage" id="stage">
+    <div class="plate" id="plate">
+      <img class="poster" src="assets/poster.jpg" alt="" aria-hidden="true">
+      <img class="loop" id="loop" src="assets/neon-city.webp"
+           alt="Animated night cityscape: dense towers lit amber and magenta, pale searchlight beams sweeping the sky, a holographic figure above one rooftop, and giant billboards showing a face in profile and a pair of eyes.">
+      <div class="grain" aria-hidden="true"></div>
+      <div class="vignette" aria-hidden="true"></div>
+    </div>
+
+    <div class="overlay">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Continuous loop · 1280 × 720</p>
+      <h1>Neon<span>City</span></h1>
+      <p class="lede">Sweeping searchlights, flickering windows, and billboards that never sleep.</p>
+      <button class="btn" id="fs" type="button">View fullscreen</button>
+    </div>
+
+    <p class="loading" id="loading" role="status">Loading loop…</p>
+  </section>
+
+  <section class="specs">
+    <dl>
+      <div><dt>Format</dt><dd class="hot">Animated WebP</dd></div>
+      <div><dt>Resolution</dt><dd>1280 × 720</dd></div>
+      <div><dt>Aspect</dt><dd>16 : 9</dd></div>
+      <div><dt>Weight</dt><dd>10.6 MB</dd></div>
+      <div><dt>Playback</dt><dd>Seamless, endless</dd></div>
+    </dl>
+  </section>
+
+  <section class="layers">
+    <h2>What moves in the frame</h2>
+    <p class="intro">The still reads as one painting. The loop is five things drifting at different speeds — which is what keeps the city from looking like a screensaver.</p>
+
+    <ol class="layer-list">
+      <li>
+        <span class="tag">Sky</span>
+        <h3>Searchlight beams</h3>
+        <p>Pale blue shafts cross the upper third on long, uneven arcs. They never sync, so the sky never repeats visibly.</p>
+      </li>
+      <li>
+        <span class="tag">Far</span>
+        <h3>Sodium megastructures</h3>
+        <p>The amber slabs behind everything hold almost still — a warm backplate that gives the cooler foreground something to sit against.</p>
+      </li>
+      <li>
+        <span class="tag">Mid</span>
+        <h3>Window flicker</h3>
+        <p>Thousands of lit cells switch at random intervals. Sparse enough to read as occupancy, not noise.</p>
+      </li>
+      <li>
+        <span class="tag">Signage</span>
+        <h3>The billboards</h3>
+        <p>A face in profile on the tall dark tower, a pair of eyes on the low block beside it, a watch ad down at street level. Each cycles on its own clock.</p>
+      </li>
+      <li>
+        <span class="tag">Near</span>
+        <h3>Rooftop hologram</h3>
+        <p>The cyan figure on the left-hand roof is the only thing in the frame with a body. It anchors the scale of everything behind it.</p>
+      </li>
+    </ol>
+  </section>
+
+  <footer>
+    <p>Neon City Loop</p>
+    <p class="dim">Animated WebP · plays natively in any modern browser</p>
+  </footer>
+</main>
+
+<script src="app.js" defer></script>
+</body>
+</html>
